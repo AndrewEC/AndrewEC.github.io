@@ -10,30 +10,31 @@
             return;
         }
         callback(element);
-    }
-
-    var hideButton = function(){
-        doWithElement(buttonId, function(button){
-            button.style.display = 'none';
-        });
     };
 
-    var revealEmail = function(e){
-        doWithElement(spanId, function(span){
-            var email = 'YW5kcmV3LmUuY3VtbWluZ0BnbWFpbC5jb20=';
-            try{
-                email = atob(email);
-            }catch(e){
-                return console.error('Could not decode email address.');
-            }
-            span.innerHTML = email;
-            hideButton();
-        });
+    var compose = function(id, callback){
+        return function(){
+            doWithElement(id, callback);
+        }
     };
 
-    document.body.onload = function(){
-        doWithElement(buttonId, function(button){
-            button.addEventListener('click', revealEmail, true);
-        });
-    };
+    var hideButton = compose(buttonId, function(button){
+        button.style.display = 'none';
+    });
+
+    var revealEmail = compose(spanId, function(span){
+        var email = 'YW5kcmV3LmUuY3VtbWluZ0BnbWFpbC5jb20=';
+        try{
+            email = atob(email);
+        }catch(e){
+            return console.error('Could not decode email address.');
+        }
+        span.innerHTML = email;
+        hideButton();
+    });
+
+    document.body.onload = compose(buttonId, function(button){
+        button.addEventListener('click', revealEmail, true);
+    });
+    
 })();

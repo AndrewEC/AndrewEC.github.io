@@ -34,6 +34,8 @@ button{
     border: 1px solid #86c232;
     font: 'Ubuntu';
     font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 button:focus{
