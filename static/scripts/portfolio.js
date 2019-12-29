@@ -33,7 +33,7 @@
         hideButton();
     });
 
-    document.body.onload = compose(buttonId, function(button){
+    window.onload = compose(buttonId, function(button){
         button.addEventListener('click', revealEmail, true);
     });
     
