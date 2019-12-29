@@ -1,3 +1,51 @@
+/* ============================================================ */
+/* Global Styles */
+@font-face {
+    font-family: 'Voltaire';
+    src: url('/static/fonts/Voltaire-Regular.ttf');
+}
+
+* {
+    font-family: 'Voltaire';
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: #161819;
+}
+
+a {
+    color: #c3e791;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+a:focus{
+    outline: 1px dashed #86c232;
+}
+
+h1, h2, h3, h4, h5 {
+    margin-bottom: 0px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 34px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+li, a, span, p {
+    font-size: 24px;
+}
+
 button{
     padding: 15px;
     color: #c3e791;
@@ -12,6 +60,56 @@ button{
 button:focus{
     outline: 1px dashed #fff;
 }
+/* ============================================================ */
+
+/* ============================================================ */
+/* Content */
+#content-column {
+    width: 60%;
+    margin: 0 auto;
+    border-left: 5px solid #86c232;
+    border-right: 5px solid #86c232;
+    color: #AAAEB3;
+}
+
+.content-container {
+    background-color: #222629;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: content-box;
+    overflow: auto;
+    margin-bottom: 40px;
+}
+
+#last-container {
+    padding-bottom: 50px;
+    margin-bottom: 0px !important;
+}
+
+#first-container{
+    padding-bottom: 30px;
+}
+/* ============================================================ */
+
+/* ============================================================ */
+/* Other */
+.icon-link {
+    color: #222629;
+    text-decoration: none;
+}
+
+.divider{
+    width: 100%;
+    height: 2px;
+    display: block;
+    background-color: #566441;
+}
+
+.bottom-link{
+    margin-bottom: 20px;
+    display: block;
+}
+/* ============================================================ */
 
 /* ============================================================ */
 /* Media Queries */
