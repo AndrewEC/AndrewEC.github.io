@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" xml:lang="en">
 	<head>
-		<meta charset="utf-8">
-    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Andrew's digital portfolio referencing past personal and professional projects and work experience.">
+		<meta charset="utf-8"/>
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="description" content="Andrew's digital portfolio referencing past personal and professional projects and work experience."/>
 		<meta name="copyright" content="Andrew Cumming"/>
 		<meta name="robots" content="index"/>
-		<meta name="keywords" content="portfolio, digital, java, github, andrew, accessibility, python, spring, angular, agile, testing, android">
+		<meta name="keywords" content="portfolio, digital, java, github, andrew, accessibility, python, spring, angular, agile, testing, android"/>
 	
 		<title>Andrew's Digital Portfolio</title>
 		
@@ -21,13 +21,13 @@
 				<h1>Andrew's Portfolio</h1>
 				<br/>
 				<a href="https://www.linkedin.com/in/andrew-cumming/" class="icon-link" target="_blank" rel="noreferrer">
-					<img src="static/icons/linkedin-icon.svg" alt="Find me on LinkedIn" width="32"/>
+					<img src="static/icons/linkedin-icon.svg" alt="Find me on LinkedIn" width="48"/>
 				</a>
 				<a href="https://github.com/AndrewEC" class="icon-link" target="_blank" rel="noreferrer">
-					<img src="static/icons/github-icon.svg" alt="Find me on Github" width="32"/>
+					<img src="static/icons/github-icon.svg" alt="Find me on Github" width="48"/>
 				</a>
 				<a href="https://stackoverflow.com/story/andrewc" class="icon-link" target="_blank" rel="noreferrer">
-					<img src="static/icons/stack-icon.svg" alt="Find me on Stack Overflow" width="32"/>
+					<img src="static/icons/stack-icon.svg" alt="Find me on Stack Overflow" width="48"/>
 				</a>
 			</div>
 
@@ -41,11 +41,10 @@
 					<li>UML Design</li>
 					<li>Black and White Box Testing Methodologies</li>
 					<li>Agile/Scrum</li>
-					<li>Native Android Java/Kotlin Development</li>
 					<li>Angular 2+/SPA Development</li>
 					<li>Spring Boot/Reactive/MVC Development</li>
 					<li>Python/Flask</li>
-					<li>Code Design Patterns</li>
+					<li>SQL/MariaDB</li>
 				</ul>
 			</div>
 
@@ -71,47 +70,54 @@
 
 			<div class="content-container">
 				<h1>Professional Work</h1>
+
+				<h2>Business Banking Portal Development</h2>
+				<ul>
+					<li>Developed multiple Java/Spring Boot microservices to support a next generation online
+						banking portal for small and mid size business clients</li>
+					<li>Apps were developed in a 2 week sprint cycle without any dedicated quality assurance</li>
+					<li>Applications built deployed via Jenkins and Urban Code Deploy through an automated continuous
+						integration pipeline and hosted on the Pivotal Cloud Foundry platform</li>
+					<li>Debugged production level defects and issues using standard application logs and Dynatrace tracking</li>
+					<li>Designed and implemented structured database schemas using MariaDB for features like user
+						preferences and approval workflows with the help of Liquibase and Spring JPA</li>
+					<li>All services were build with an automated test suite including unit tests, integration tests, and
+						mutation tests using PIT</li>
+					<li>Worked with a sizeable team (> 50 people) using a SCRUM like methodology centered around the concept
+						of Journeys and Squads</li>
+					<li>Generated service interfaces using automated tools like SpringFox and OpenAPI generator</li>
+				</ul>
+
+				<div class="divider"></div>
+
+				<h2>Personal Online Banking Service Development</h2>
+				<ul>
+					<li>Developed multiple backend services using Spring Boot and Spring MVC to support various online
+						banking features like self-serve loan management, GIC purchase and renewal, and online foreign
+						currency ordering</li>
+					<li>Created multi-channel applications that support customer and employee assisted channels
+						utilizing LDAP/SPNEGO for automatic employee authentication</li>
+					<li>Applications support thousands of online banking clients and help handle tens of millions
+						of dollars in transactions annually</li>
+					<li>Applications built and deployed via Jenkins and Urban Code Deploy through an automated
+						continuous integration pipeline and hosted on the Bluemix platform</li>
+					<li>Developed, largely, in a Waterfall style methodology with dedicated quality assurance team members</li>
+				</ul>
+
+				<div class="divider"></div>
+
 				<h2>Accessibility Analysis and Training</h2>
 				<ul>
-					<li>Gave a lectures to hundreds of Government of Ontario employees
-						demonstrating how to create accessible Word/PDF documents and how to use JAWS</li>
-					<li>Went out to external locations to meet with clients and provide personalized
-						training and advice for individuals and teams</li>
+					<li>Gave a lectures to hundreds of Government of Ontario employees demonstrating
+						how to create accessible Word/PDF documents and how to use JAWS </li>
+					<li>Met with clients at external locations and provided personalized training and
+						advice for individuals and teams </li>
 					<li>Analyzed government websites and documents against the Web Content Accessibility
-						Guidelines to identify possible issues and accessibility deficiencies using Job
-						Access With Speech (JAWS) software</li>
+						Guidelines to identify possible issues and accessibility deficiencies primarily
+						using Job Access With Speech (JAWS) software </li>
 					<li>Documented issues, prepared reports, and presented findings to clients</li>
 				</ul>
 
-				<div class="divider"></div>
-
-				<h2>Spring MVC Development</h2>
-				<ul>
-					<li>Created Spring MVC frontend application to support financial banking features such as ordering cash in a foreign currency</li>
-					<li>Applications were created using Spring MVC and deployed to the Bluemix cloud hosting environment</li>
-					<li>Applications built help support tens of millions of dollars in transactions annually</li>
-					<li>Used detailed session to control flow of multi-page forms</li>
-				</ul>
-
-				<div class="divider"></div>
-
-				<h2>Spring Boot Development</h2>
-				<ul>
-					<li>Helped develop a Spring Boot restful service to enable more concise self serve loan management features</li>
-					<li>Applications were developed in Spring Boot and deployed to the Bluemix cloud hosting environment</li>
-					<li>Supports hundreds of daily transactions</li>
-					<li>Built out and utilized custom CSRF solutions</li>
-				</ul>
-
-				<div class="divider"></div>
-
-				<h2>Java/Jersey Development</h2>
-				<ul>
-					<li>Helped develop a Java/Jersey based restful service to support purchasing and renewing guaranteed investment certificates</li>
-					<li>Utilized maven overlay to enable a single codebase to create two build artifacts</li>
-					<li>Artifacts utilize SPNEGO/LDAP authentication and Basic authentication to support employee and client channels</li>
-					<li>Utilized OWASP CSRFGuard solution for request validation</li>
-				</ul>
 			</div>
 
 			<div class="content-container">

@@ -1,12 +1,12 @@
 /* ============================================================ */
 /* Global Styles */
 @font-face {
-    font-family: 'Voltaire';
-    src: url('/static/fonts/Voltaire-Regular.ttf');
+    font-family: 'Quicksand';
+    src: url('/static/fonts/Quicksand-Light.ttf');
 }
 
 * {
-    font-family: 'Voltaire';
+    font-family: 'Quicksand';
 }
 
 html, body {
@@ -31,19 +31,23 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 3em;
 }
 
 h2 {
-    font-size: 34px;
+    font-size: 2.5em;
 }
 
 h3 {
-    font-size: 28px;
+    font-size: 2em;
+}
+
+li {
+    margin-bottom: 20px;
 }
 
 li, a, span, p {
-    font-size: 24px;
+    font-size: 1.3em;
 }
 
 button{
@@ -52,7 +56,7 @@ button{
     background-color: #161819;
     border: 1px solid #86c232;
     font: 'Ubuntu';
-    font-size: 24px;
+    font-size: 1.3em;
     width: 100%;
     box-sizing: border-box;
 }
@@ -79,6 +83,8 @@ button:focus{
     box-sizing: content-box;
     overflow: auto;
     margin-bottom: 40px;
+    padding-bottom: 20px;
+    padding-top: 15px;
 }
 
 #last-container {
@@ -103,6 +109,8 @@ button:focus{
     height: 2px;
     display: block;
     background-color: #566441;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .bottom-link{
