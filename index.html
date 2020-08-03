@@ -16,9 +16,14 @@
 		<link type="text/css" rel="stylesheet" href="/static/css/theme.css" />
 	</head>
 	<body>
+
+		<div id="footer">
+			<a href="#top-heading">Back to Top</a>
+		</div>
+
 		<div id="content-column">
 			<div class="content-container" id="first-container">
-				<h1>Andrew's Portfolio</h1>
+				<h1 id="top-heading">Andrew's Portfolio</h1>
 				<br/>
 				<a href="https://www.linkedin.com/in/andrew-cumming/" class="icon-link" target="_blank" rel="noreferrer">
 					<img src="static/icons/linkedin-icon.svg" alt="Find me on LinkedIn" width="48"/>
@@ -34,6 +39,30 @@
 			<div class="content-container">
 				<h2>Resume</h2>
 				<a href="https://github.com/AndrewEC/AndrewEC.github.io/blob/master/static/files/Resume.pdf?raw=true">Download my Resume (.pdf) [71 KB]</a>
+				<h3>Contents</h3>
+				<ul id="table-of-contents">
+					<li>
+						<a href="#employment-history">Employment History</a>
+					</li>
+					<li>
+						<a href="#education">Education</a>
+					</li>
+					<li>
+						<a href="#professional-work">Professional Work</a>
+					</li>
+					<li>
+						<a href="#personal-projects">Personal Projects</a>
+					</li>
+					<li>
+						<a href="#writings">Writings</a>
+					</li>
+					<li>
+						<a href="#contact-info">Contact Info</a>
+					</li>
+				</ul>
+
+				<div class="divider"></div>
+
 				<h3>Skills Summary</h3>
 				<ul>
 					<li>Accessibility Analysis and Remediation</li>
@@ -49,7 +78,7 @@
 			</div>
 
 			<div class="content-container">
-				<h2>Employment History</h2>
+				<h2 id="employment-history">Employment History</h2>
 				<ul>
 					<li>Royal Bank of Canada - Developer (Spring Boot/Angular) - 2019</li>
 					<li>Royal Bank of Canada - Developer (Spring MVC/Sprint Boot/J2EE) - 2017</li>
@@ -63,15 +92,15 @@
 			</div>
 
 			<div class="content-container">
-				<h2>Education</h2>
+				<h2 id="education">Education</h2>
 				<p>Centennial College - Toronto, Ontario</p>
 				<p>Software Engineering Technology, 2012 to December 2016 - Advanced Diploma </p>
 			</div>
 
 			<div class="content-container">
-				<h1>Professional Work</h1>
+				<h1 id="professional-work">Professional Work</h1>
 
-				<h2>Business Banking Portal Development</h2>
+				<h2 id="business-banking-portal-development">Business Banking Portal Development</h2>
 				<ul>
 					<li>Developed multiple Java/Spring Boot microservices to support a next generation online
 						banking portal for small and mid size business clients</li>
@@ -90,7 +119,7 @@
 
 				<div class="divider"></div>
 
-				<h2>Personal Online Banking Service Development</h2>
+				<h2 id="personal-online-banking-service-development">Personal Online Banking Service Development</h2>
 				<ul>
 					<li>Developed multiple backend services using Spring Boot and Spring MVC to support various online
 						banking features like self-serve loan management, GIC purchase and renewal, and online foreign
@@ -106,7 +135,7 @@
 
 				<div class="divider"></div>
 
-				<h2>Accessibility Analysis and Training</h2>
+				<h2 id="accessibility-analysis-and-training">Accessibility Analysis and Training</h2>
 				<ul>
 					<li>Gave a lectures to hundreds of Government of Ontario employees demonstrating
 						how to create accessible Word/PDF documents and how to use JAWS </li>
@@ -121,7 +150,7 @@
 			</div>
 
 			<div class="content-container">
-				<h1>Personal Projects</h1>
+				<h1 id="personal-projects">Personal Projects</h1>
 				<h2>Contrast Calculator</h2>
 				<p>One of my first independant projects; a simple Java based tool to check colour combinations against WCAG 2.0 colour contrast criteria.</p>
 				<ul>
@@ -150,7 +179,7 @@
 			</div>
 
 			<div class="content-container">
-				<h1>Writings</h1>
+				<h1 id="writings">Writings</h1>
 				<p>A collection of research and summary reports, mostly focusing on
 					digital accessibility tools, methods, and standards.</p>
 				<h2>Word to PDF Tipsheet</h2>
@@ -186,7 +215,7 @@
 			</div>
 
 			<div id="last-container" class="content-container">
-				<h2>Contact Info</h2>
+				<h2 id="contact-info">Contact Info</h2>
 				<p>If you would like to contact me you can find my email below:</p>
 				<button id="reveal-email">Reveal Email</button>
 				<span id="email-container"></span>
