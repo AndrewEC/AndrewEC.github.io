@@ -1,3 +1,5 @@
+// Base64 polyfill pulled from: https://github.com/MaxArt2501/base64-js
+// License: MIT
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) {
         // AMD. Register as an anonymous module.
