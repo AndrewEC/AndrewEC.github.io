@@ -5,7 +5,7 @@
 
     var doWithElement = function(id, callback) {
         var element = document.getElementById(id);
-        if(!element){
+        if (!element) {
             console.error('Could not find element with id: ' + id);
             return;
         }
@@ -13,7 +13,7 @@
     };
 
     var compose = function(id, callback) {
-        return function(){
+        return function() {
             doWithElement(id, callback);
         }
     };
@@ -24,10 +24,11 @@
 
     var revealEmail = compose(spanId, function(span) {
         var email = 'YW5kcmV3LmUuY3VtbWluZ0BnbWFpbC5jb20=';
-        try{
+        try {
             email = atob(email);
-        }catch(e){
-            return console.error('Could not decode email address.');
+        } catch(e) {
+            console.error('Could not decode email address.');
+            email = 'Cannot base 64 decode email adress. Your brows might not supporrt base64 encoding and decoding.';
         }
         hideButton();
         span.innerHTML = email;
