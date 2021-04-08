@@ -28,7 +28,7 @@
             email = atob(email);
         } catch(e) {
             console.error('Could not decode email address.');
-            email = 'Cannot base 64 decode email adress. Your brows might not supporrt base64 encoding and decoding.';
+            email = 'Cannot base64 decode the email address. Your browser might not supporrt base64 encoding and decoding.';
         }
         hideButton();
         span.innerHTML = email;
