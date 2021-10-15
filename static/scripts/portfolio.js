@@ -1,41 +1,39 @@
-(function(){
+(function() {
 
-    var buttonId = 'reveal-email';
-    var spanId = 'email-container';
+    var revealEmailButtonId = 'reveal-email';
+    var emailContainerSpanId = 'email-container';
+    var encodedEmailAddress = 'YW5kcmV3LmUuY3VtbWluZ0BnbWFpbC5jb20=';
 
-    var doWithElement = function(id, callback) {
-        var element = document.getElementById(id);
-        if (!element) {
-            console.error('Could not find element with id: ' + id);
-            return;
-        }
-        callback(element);
-    };
-
-    var compose = function(id, callback) {
+    var createElementConsumerFunction = function(elementId, consumerCallback) {
         return function() {
-            doWithElement(id, callback);
+            var element = document.getElementById(elementId);
+            if (!element) {
+                return console.error('Could not find element with id: ' + elementId);
+            }
+            consumerCallback(element);
         }
     };
 
-    var hideButton = compose(buttonId, function(button) {
-        button.style.display = 'none';
+    var hideRevealEmailButton = createElementConsumerFunction(revealEmailButtonId, function(revealEmailButton) {
+        revealEmailButton.style.display = 'none';
     });
 
-    var revealEmail = compose(spanId, function(span) {
-        var email = 'YW5kcmV3LmUuY3VtbWluZ0BnbWFpbC5jb20=';
+    var decodeEmailAddress = function() {
         try {
-            email = atob(email);
-        } catch(e) {
-            console.error('Could not decode email address.');
-            email = 'Cannot base64 decode the email address. Your browser might not supporrt base64 encoding and decoding.';
+            return atob(encodedEmailAddress);
+        } catch (e) {
+            console.error('Could not decode email address: ' + JSON.stringify(e));
+            return 'Cannot base64 decode the email address. Your browser might not supporrt base64 encoding and decoding.';
         }
-        hideButton();
-        span.innerHTML = email;
+    }
+
+    var revealEmail = createElementConsumerFunction(emailContainerSpanId, function(emailContainerSpan) {
+        hideRevealEmailButton();
+        emailContainerSpan.innerHTML = decodeEmailAddress();
     });
 
-    window.onload = compose(buttonId, function(button) {
-        button.addEventListener('click', revealEmail, true);
+    window.onload = createElementConsumerFunction(revealEmailButtonId, function(revealEmailButton) {
+        revealEmailButton.addEventListener('click', revealEmail, true);
     });
     
 })();
