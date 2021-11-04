@@ -23,7 +23,7 @@
             return atob(encodedEmailAddress);
         } catch (e) {
             console.error('Could not decode email address: ' + JSON.stringify(e));
-            return 'Cannot base64 decode the email address. Your browser might not supporrt base64 encoding and decoding.';
+            return 'Cannot base64 decode the email address. Your browser might not support base64 encoding and decoding.';
         }
     }
 
