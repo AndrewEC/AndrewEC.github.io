@@ -1,12 +1,12 @@
 /* ============================================================ */
 /* Global Styles */
 @font-face {
-    font-family: 'Quicksand';
-    src: url('/static/fonts/Quicksand-Light.ttf');
+    font-family: 'Roboto';
+    src: url('/static/fonts/Roboto-Light.ttf');
 }
 
 * {
-    font-family: 'Quicksand';
+    font-family: 'Roboto';
 }
 
 html, body {
