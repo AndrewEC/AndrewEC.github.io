@@ -38,7 +38,7 @@
 
 			<div class="content-container">
 				<h2>Resume</h2>
-				<a href="https://github.com/AndrewEC/AndrewEC.github.io/blob/master/static/files/Resume.pdf?raw=true">Download my Resume (.pdf) [71 KB]</a>
+				<a href="https://github.com/AndrewEC/AndrewEC.github.io/blob/master/static/files/Resume.pdf?raw=true">Download my Resume (.pdf) [64 KB]</a>
 				<h3>Contents</h3>
 				<ul id="table-of-contents">
 					<li>
@@ -71,7 +71,6 @@
 						<li>Unit Testing</li>
 						<li>Integration Testing</li>
 						<li>Mutation Testing</li>
-						<li>Performance Testing</li>
 						<li>Exploratory Testing</li>
 						<li>Equivalence Partitioning</li>
 						<li>Boundary Value Analysis</li>
@@ -87,7 +86,7 @@
 			<div class="content-container">
 				<h2 id="employment-history">Employment History</h2>
 				<ul>
-					<li>Royal Bank of Canada - Developer (Spring Boot/Angular) - 2019</li>
+					<li>Royal Bank of Canada - Developer (Spring Boot/Angular) - 2019 (Current)</li>
 					<li>Royal Bank of Canada - Developer (Spring MVC/Sprint Boot/J2EE) - 2017</li>
 					<li>Royal Bank of Canada - Developer (Co-op) - 2016</li>
 					<li>Royal Bank of Canada - Technical Systems Analyst (Co-op) - 2015</li>
@@ -101,7 +100,7 @@
 			<div class="content-container">
 				<h2 id="education">Education</h2>
 				<p>Centennial College - Toronto, Ontario</p>
-				<p>Software Engineering Technology, 2012 to December 2016 - Advanced Diploma </p>
+				<p>Software Engineering Technology, 2012 to December 2016 - Advanced Diploma (With Honours)</p>
 			</div>
 
 			<div class="content-container">
@@ -110,18 +109,18 @@
 				<h2 id="business-banking-portal-development">Business Banking Portal Development</h2>
 				<ul>
 					<li>Developed multiple Java/Spring Boot microservices to support a next generation online
-						banking portal for small and mid size business clients</li>
-					<li>Apps were developed in a 2 week sprint cycle without any dedicated quality assurance team</li>
-					<li>All services were build with an automated test suite including unit tests, integration tests, and
-						mutation tests using PIT</li>
+						banking portal for small and mid size business clients processing thousands of transactions
+						worth tens of millions annually</li>
+					<li>Developed apps following an agile, scrum like, methodology in 2 week cycles</li>
+					<li>Ensured product quality through the implementation of granular automated tests including unit
+						tests, integration tests with wiremock, contract tests with PACT, and mutation tests using PIT</li>
+					<li>Ensured application resiliency and banking portal scalability by taking advandage of latest Spring
+						conventions including reactive and asyncoronous paradigms</li>
 					<li>Applications built deployed via Jenkins and Urban Code Deploy through an automated continuous
 						integration pipeline and hosted on the Pivotal Cloud Foundry platform</li>
 					<li>Debugged production level defects and issues using standard application logs and Dynatrace tracking</li>
 					<li>Designed and implemented structured database schemas using MariaDB for features like user
 						preferences and approval workflows with the help of Liquibase and Spring JPA</li>
-					<li>Worked with a sizeable team (> 50 people) using a SCRUM like methodology centered around the concept
-						of Journeys and Squads</li>
-					<li>Generated service interfaces using automated tools like SpringFox and OpenAPI generator</li>
 				</ul>
 
 				<div class="divider"></div>
@@ -131,8 +130,8 @@
 					<li>Developed multiple backend services using Spring Boot and Spring MVC to support various online
 						banking features like self-serve loan management, GIC purchase and renewal, and online foreign
 						currency ordering</li>
-					<li>Created multi-channel applications that support customer and employee assisted channels
-						utilizing LDAP/SPNEGO for automatic employee authentication</li>
+					<li>Created multi-channel applications that support both external customers and internal employees
+						utilizing LDAP/SPNEGO for automatic integrated employee authentication</li>
 					<li>Applications support thousands of online banking clients and help handle tens of millions
 						of dollars in transactions annually</li>
 					<li>Applications built and deployed via Jenkins and Urban Code Deploy through an automated
@@ -145,12 +144,12 @@
 				<h2 id="accessibility-analysis-and-training">Accessibility Analysis and Training</h2>
 				<ul>
 					<li>Gave a lectures to hundreds of Government of Ontario employees demonstrating
-						how to create accessible Word/PDF documents and how to use JAWS </li>
+						how to create accessible Word/PDF documents and how to use JAWS</li>
 					<li>Met with clients at external locations and provided personalized training and
-						advice for individuals and teams </li>
+						advice for individuals and teams</li>
 					<li>Analyzed government websites and documents against the Web Content Accessibility
 						Guidelines to identify possible issues and accessibility deficiencies primarily
-						using Job Access With Speech (JAWS) software </li>
+						using Job Access With Speech (JAWS) software</li>
 					<li>Documented issues, prepared reports, and presented findings to clients</li>
 				</ul>
 
@@ -187,13 +186,15 @@
 
 			<div class="content-container">
 				<h1 id="writings">Writings</h1>
-				<p>A collection of research and summary reports, mostly focusing on
+				<p>A collection of research and summary reports I have written that mostly focus on
 					digital accessibility tools, methods, and standards.</p>
+
 				<h2>Word to PDF Tipsheet</h2>
 				<p>Many companies, including the government, choose to
-					distribute documents in a PDF format. This is usually the preferred
-					format because it is generally more accessible, has more features, and has
-					a free reader that can be downloaded to view it in its fullest.</p>
+					distribute documents in a PDF format due to the free reader and feature rich capabilities
+					of the PDF document.</p>
+				<p>This document was released to Ministry employees and provided brief instructions for converting
+					a Word document into a PDF while maintining compatibility with assistive technologies.</p>
 				<a href="https://github.com/AndrewEC/AndrewEC.github.io/blob/master/static/files/Word_to_PDF_Tip_Sheet.pdf?raw=true" target="_blank" rel="noreferrer" class="bottom-link">
 					Word to PDF Tip Sheet [78 KB]</a>
 
@@ -213,8 +214,8 @@
 				<h2>Creating Accessible Emails in Outlook</h2>
 				<p>One of the most common methods of transmitting information
 					from one person to another is through the use of email.
-					In a gobernment setting the email client of choice is Microsoft's Outlook.</p>
-				<p>So this guide targets outlook specifically and tries to provide the users
+					In a government setting the email client of choice is, most typically, Microsoft's Outlook.</p>
+				<p>This guide targets outlook specifically and tries to provide the users
 					with enough information to create their own accessible emails.</p>
 				<a href="https://github.com/AndrewEC/AndrewEC.github.io/blob/master/static/files/Guide_to_Creating_Accessible_Emails_in_Outlook.docx?raw=true"
 						target="_blank" rel="noreferrer" class="bottom-link">
