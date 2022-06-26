@@ -22,7 +22,7 @@ a {
     box-sizing: border-box;
 }
 
-a:focus{
+a:focus {
     outline: 1px dashed #86c232;
 }
 
@@ -50,7 +50,7 @@ li, a, span, p {
     font-size: 1.3em;
 }
 
-button{
+button {
     padding: 15px;
     color: #c3e791;
     background-color: #161819;
@@ -61,7 +61,7 @@ button{
     box-sizing: border-box;
 }
 
-button:focus{
+button:focus {
     outline: 1px dashed #fff;
 }
 /* ============================================================ */
@@ -87,7 +87,7 @@ button:focus{
     bottom: 0;
     width: 100%;
     text-align: center;
-    padding: 30px 0px 30px 0px;
+    padding: 20px 0px 20px 0px;
     background-color: #161819;
 }
 /* ============================================================ */
@@ -120,7 +120,7 @@ button:focus{
     margin-bottom: 0px !important;
 }
 
-#first-container{
+#first-container {
     padding-bottom: 30px;
 }
 /* ============================================================ */
@@ -132,7 +132,7 @@ button:focus{
     text-decoration: none;
 }
 
-.divider{
+.divider {
     width: 100%;
     height: 2px;
     display: block;
@@ -141,7 +141,7 @@ button:focus{
     margin-bottom: 50px;
 }
 
-.bottom-link{
+.bottom-link {
     margin-bottom: 20px;
     display: block;
 }
@@ -149,34 +149,34 @@ button:focus{
 
 /* ============================================================ */
 /* Media Queries */
-@media screen and (max-width: 1200px) and (min-width: 901px){
+@media screen and (max-width: 1200px) and (min-width: 901px) {
     #content-column {
         width: 75%;
     }
 }
 
-@media screen and (max-width: 900px) and (min-width: 701px){
-    #content-column{
+@media screen and (max-width: 900px) and (min-width: 701px) {
+    #content-column {
         width: 85%;
     }
 
-    .content-container{
+    .content-container {
         padding-left: 15px;
         padding-right: 15px;
     }
 
     #footer {
-        padding: 20px 0px 20px 0px;
+        padding: 15px 0px 15px 0px;
     }
 }
 
-@media screen and (max-width: 700px){
-    #content-column{
+@media screen and (max-width: 700px) {
+    #content-column {
         width: 100%;
         margin-bottom: 35px;
     }
 
-    .content-container{
+    .content-container {
         padding-left: 10px;
         padding-right: 10px;
     }
