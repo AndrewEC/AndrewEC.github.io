@@ -89,8 +89,6 @@
 					<li>Royal Bank of Canada - Technical Systems Analyst (Co-op) - 2015</li>
 					<li>Royal Bank of Canada - IT Accessibility and Solutions Developer (Co-op) - 2015</li>
 					<li>Ministry of Community and Social Services - Technology Accessibility Analyst (Co-op) - 2013</li>
-					<li>Thornton Library - Youth Program Assistant (Splash, Volunteer) - 2011</li>
-					<li>Bear Creek Secondary School - Helping Hand (Volunteer) - 2010</li>
 				</ul>
 			</div>
 
@@ -174,23 +172,24 @@
 
 			<div class="content-container">
 				<h1 id="personal-projects">Personal Projects</h1>
-				<h2>Contrast Calculator</h2>
-				<p>One of my first independant projects; a simple Java based tool to check colour combinations against WCAG 2.0 colour contrast criteria.</p>
+				<h2>har-server</h2>
+				<p>A command line Python/FastAPI server designed to help serve content from a series of Http Archive (.har)
+					files to enable users to retain local copies of old and unmaintained websites for personal use.</p>
 				<ul>
-					<li>Has simple eye dropper tool to select any colour on screen</li>
-					<li>Built in snipping tool to take easy screenshots</li>
-					<li>Window imager/magnifier to take screenshots of particular application windows</li>
-					<li>Colour blind filters that can be used with the previously mentioned tools</li>
+					<li>A simple FastAPI server that serves content from a series of Http Archives.</li>
+					<li>Provides configuration options to alter the way incoming requests are matched with existing .har entries</li>
+					<li>Provides configuration options to rewrite parts of the har entry request and response properties to customize behaviour and output.</li>
 				</ul>
-				<a href="https://github.com/AndrewEC/ContrastCalculator" target="_blank" rel="noreferrer" class="bottom-link" title="View Contrast Calculator on Github">View on Github</a>
+				<a href="https://github.com/AndrewEC/har-server" target="_blank" rel="noreferrer" class="bottom-link" title="View Contrast Calculator on Github">View on Github</a>
 
 				<div class="divider"></div>
 
-				<h2>Steganography App</h2>
+				<h2>SteganographyApp</h2>
 				<p>A command line utility demonstrating the concept of steganography by
 					hiding and retrieving data in images by applying changes to the least
 					significant bit (LSB) of each RGB value in the image's pixels.</p>
 				<ul>
+					<li>Cross-platform support via .Net Core.</li>
 					<li>Can hide a single large file in multiple images</li>
 					<li>Encrypts the file's contents using AES-256 before hiding it</li>
 					<li>Minifies the file's contents using standard GZip compression</li>
@@ -199,12 +198,26 @@
 				</ul>
 				<a href="https://github.com/AndrewEC/SteganographyApp" target="_blank" rel="noreferrer" class="bottom-link" title="View Steganography app on Github">View on Github</a>
 
+				<div class="divider"></div>
+
+				<h2>SteganographyNotepad</h2>
+				<p>An Avalonia UI wrapper the SteganographyApp that acts like a simple text editor to secretly stash text within images.</p>
+				<ul>
+					<li>Cross-platform support through the Avalonia UI framework.</li>
+					<li>Visual settings tab to customize encryption/obfuscation options.</li>
+					<li>Optional functionality to quickly erase data in images.</li>
+				</ul>
+				<a href="https://github.com/AndrewEC/SteganographyNotepad" target="_blank" rel="noreferrer" class="bottom-link" title="View Steganography app on Github">View on Github</a>
+
 			</div>
 
 			<div class="content-container">
 				<h1 id="writings">Writings</h1>
 				<p>A collection of research and summary reports I have written that mostly focus on
 					digital accessibility tools, methods, and standards.</p>
+				<p><strong>Note:</strong> Given the age of these documents they are decent renferences
+					that outline my writing skill and style but may no longer be applicable given
+					modern technologies and updated guidelines that are not encompassed in these writings.</p>
 
 				<h2>Word to PDF Tipsheet</h2>
 				<p>Many companies, including the government, choose to
@@ -225,18 +238,6 @@
 					better understanding of its rules and standards and why we have it.</p>
 				<a href="https://github.com/AndrewEC/AndrewEC.github.io/blob/master/static/files/What_is_WCAG.docx?raw=true" target="_blank" rel="noreferrer" class="bottom-link">
 					What is WCAG? [30 KB]</a>
-
-				<div class="divider"></div>
-
-				<h2>Creating Accessible Emails in Outlook</h2>
-				<p>One of the most common methods of transmitting information
-					from one person to another is through the use of email.
-					In a government setting the email client of choice is, most typically, Microsoft's Outlook.</p>
-				<p>This guide targets outlook specifically and tries to provide the users
-					with enough information to create their own accessible emails.</p>
-				<a href="https://github.com/AndrewEC/AndrewEC.github.io/blob/master/static/files/Guide_to_Creating_Accessible_Emails_in_Outlook.docx?raw=true"
-						target="_blank" rel="noreferrer" class="bottom-link">
-					Guide to Creating Accessible Emails in Outlook [229 KB]</a>
 			</div>
 
 			<div class="content-container">
